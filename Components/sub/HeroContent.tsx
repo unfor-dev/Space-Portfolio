@@ -11,7 +11,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-50"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -20,7 +20,7 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Creative Developer Portfolio
           </h1>
         </motion.div>
 
@@ -54,7 +54,7 @@ const HeroContent = () => {
       </div>
 
       <motion.div
-        variants={slideInFromRight(0.8)}
+        variants={slideInFromRight(1)}
         className="w-full h-full flex justify-center items-center"
       >
         <Image
@@ -62,6 +62,7 @@ const HeroContent = () => {
           alt="work icons"
           height={650}
           width={650}
+          priority={false}
         />
       </motion.div>
     </motion.div>
